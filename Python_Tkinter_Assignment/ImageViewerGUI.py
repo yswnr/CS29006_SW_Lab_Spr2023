@@ -22,7 +22,7 @@ def fileClick(clicked):
     label.grid(row=1, column=0)
     print(filename)
     
-    e = Entry(root, width=50)
+    e = Entry(root, width=50)    # entry is used to create a text box
     e.grid(row=0,column=0)
     e.insert(0,"Image - "+filename[-5])
 
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     classifier = ImageClassificationModel()
     
     # Declare the file browsing button.
-    openButton = Button(root, text="Open",
+    openButton = Button(root, text="Open",fg = "pink"
                         command=lambda: fileClick(clicked))
     openButton.grid(row=0, column=1)
     # openButton.pack()
