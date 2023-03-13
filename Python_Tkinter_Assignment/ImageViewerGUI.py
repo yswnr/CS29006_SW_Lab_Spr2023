@@ -74,7 +74,7 @@ if __name__ == '__main__':
     classifier = ImageClassificationModel()
     
     # Declare the file browsing button.
-    openButton = Button(root, text="Open",fg = "pink"
+    openButton = Button(root, text="Open",fg = "blue"
                         command=lambda: fileClick(clicked))
     openButton.grid(row=0, column=1)
     # openButton.pack()
@@ -89,11 +89,9 @@ if __name__ == '__main__':
     
     
     # Declare the process button.
-    processButton = Button(root, text="Process",
+    processButton = Button(root, text="Process",fg = "blue",
                            command=lambda: process(clicked,captioner,classifier))
     processButton.grid(row=0, column=3)
     
-    # Declare the output label.
-    #outputlabel = Label(root, text ="Trail text", relief="solid")
-
+    
     root.mainloop()
