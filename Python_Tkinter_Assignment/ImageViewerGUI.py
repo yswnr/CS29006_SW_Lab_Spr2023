@@ -31,11 +31,11 @@ def process(clicked, captioner, classifier):
     # This function will produce the required output when 'Process' button is clicked.
     # Note: This should handle the case if the user clicks on the `Process` button without selecting any image file.
      global data
-    data = None
+     data = None
 
-    if(isopen==False):
+     if(isopen==False):
         print("Select a file first!")
-    else:
+     else:
                 
         if(clicked.get() == "Captioning"):
             
@@ -74,7 +74,7 @@ if __name__ == '__main__':
     classifier = ImageClassificationModel()
     
     # Declare the file browsing button.
-    openButton = Button(root, text="Open",fg = "blue"
+    openButton = Button(root, text="Open",fg = 'blue',
                         command=lambda: fileClick(clicked))
     openButton.grid(row=0, column=1)
     # openButton.pack()
@@ -89,7 +89,7 @@ if __name__ == '__main__':
     
     
     # Declare the process button.
-    processButton = Button(root, text="Process",fg = "blue",
+    processButton = Button(root, text="Process",fg = 'blue',
                            command=lambda: process(clicked,captioner,classifier))
     processButton.grid(row=0, column=3)
     
