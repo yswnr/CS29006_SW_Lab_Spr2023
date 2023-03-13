@@ -60,7 +60,8 @@ if __name__ == '__main__':
     
     # Instantiate the root window.
     root = Tk()
-    root.geometry("550x40")
+    root.geometry("600x100")
+    root.configure(bg='pink')
     e = Entry(root, width=50)
     e.grid(row=0,column=0)
     
